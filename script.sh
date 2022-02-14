@@ -10,6 +10,7 @@
 # -----------------------
 # | SOME CONFIGURATION  |
 # -----------------------
+sudo apt-get install curl -y
 mkdir ~/.themes
 mkdir ~/.icons
 wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh
