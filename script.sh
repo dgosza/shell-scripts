@@ -11,6 +11,11 @@
 # https://pointcom.sampa.br/linux/como-instalar-o-vmware-workstation-player-no-ubuntu-20-04/
 
 # -----------------------
+# |  PRE INSTALLATION   |
+# -----------------------
+
+
+# -----------------------
 # | SOME CONFIGURATION  |
 # -----------------------
 sudo apt-get install curl -y
@@ -81,9 +86,19 @@ chmod +x getplayer-linux
 sudo ./getplayer-linux --required --eulas-agreed
 rm -f getplayer-linux
 
+# SPACESHIP THEME TO ZSH
+git clone https://github.com/denysdovhan/spaceship-prompt.git ~/.oh-my-zsh/custom/themes/spaceship-prompt
+ln -s ~/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme
+
 # -----------------------
-# |   INSTALL MANUALLY  |
+# |  POST INSTALLATION  |
 # -----------------------
+
+# Install FireCode Font in Terminus. 
+# INSTALL FONT https://github.com/tonsky/FiraCode/releases
+
+# gedit ~/.zshrc
+# ZSH_THEME="spaceship"
 
 # THEME NORDIC
 # https://www.gnome-look.org/p/1267246
