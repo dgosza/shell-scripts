@@ -7,11 +7,9 @@
 # UTILS
 # https://extensions.gnome.org/
 
-# Virtual Box
-# https://phoenixnap.com/kb/install-virtualbox-on-ubuntu
-
 # VMWare
 # https://pointcom.sampa.br/linux/como-instalar-o-vmware-workstation-player-no-ubuntu-20-04/
+
 # -----------------------
 # | SOME CONFIGURATION  |
 # -----------------------
@@ -33,6 +31,9 @@ wget -q https://download.teamviewer.com/download/linux/signature/TeamViewer2017.
 # DOCKER
 curl -fsSL https://get.docker.com | bash
 
+# ZSH
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # -----------------------
 # |      ADD REPOS      |
 # -----------------------
@@ -47,8 +48,6 @@ sudo apt-get -y update
 # -----------------------
 # |     INSTALL APPS    |
 # -----------------------
-# gnome-shell-extension-dash-to-panel -y \
-# gnome-tweaks \
 sudo apt-get install \
 neofetch \
 tree \
@@ -75,6 +74,8 @@ sudo snap install ant --classic
 # -----------------------
 # | SOME CONFIGURATION  |
 # -----------------------
+
+# VMWARE
 wget --user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0" https://www.vmware.com/go/getplayer-linux
 chmod +x getplayer-linux
 sudo ./getplayer-linux --required --eulas-agreed
