@@ -7,6 +7,11 @@
 # UTILS
 # https://extensions.gnome.org/
 
+# Virtual Box
+# https://phoenixnap.com/kb/install-virtualbox-on-ubuntu
+
+# VMWare
+# https://pointcom.sampa.br/linux/como-instalar-o-vmware-workstation-player-no-ubuntu-20-04/
 # -----------------------
 # | SOME CONFIGURATION  |
 # -----------------------
@@ -17,29 +22,11 @@ mkdir ~/.icons
 # ICONS PAPIRUS
 wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh
 
-# POSTMAN
-wget https://dl.pstmn.io/download/latest/linux64 -O postman-linux-x64.tar.gz
-sudo tar -xzf postman-linux-x64.tar.gz -C /opt
-sudo ln -s /opt/Postman/Postman /usr/bin/postman
-rm -f postman-linux-x64.tar.gz
-sudo touch /usr/share/applications/Postman.desktop
-
 # NVM
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
-# VSCODE
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
-sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
-rm -f packages.microsoft.gpg
-sudo apt install apt-transport-https
-
 # DOCKER
 curl -fsSL https://get.docker.com | bash
-
-# SPOTIFY
-curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add - 
-echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 
 # -----------------------
 # |      ADD REPOS      |
@@ -64,13 +51,19 @@ gnome-tweak-tool \
 papirus-icon-theme \
 default-jre \
 default-jdk \
-code \
 terminator \
 build-essential \
-linux-headers-generic \
-spotify-client -y
+linux-headers-generic -y
 
-
+sudo snap install \
+code --classic \
+ant --classic \
+discord \
+vlc \
+postman \
+dbeaver-ce \
+spotify \
+notion-snap
 
 # -----------------------
 # | SOME CONFIGURATION  |
@@ -87,24 +80,6 @@ rm -f getplayer-linux
 # THEME NORDIC
 # https://www.gnome-look.org/p/1267246
 # tar xf Nordic-darker-v40.tar.xz -C ~/.themes
-
-# Virtual Box
-# https://phoenixnap.com/kb/install-virtualbox-on-ubuntu
-
-# VMWare
-# https://pointcom.sampa.br/linux/como-instalar-o-vmware-workstation-player-no-ubuntu-20-04/
-
-# POSTMAN
-# https://nextgentips.com/2021/12/09/how-to-install-postman-client-on-ubuntu-21-10/
-# sudo su
-# gedit /usr/share/applications/Postman.desktop
-# [Desktop Entry]
-# Type=Application
-# Name=Postman
-# Icon=/opt/Postman/app/resources/app/assets/icon.png
-# Exec="/opt/Postman/Postman"
-# Comment=Postman GUI
-# Categories=Development;Code;
 
 # ADDING NEOFETCH WHEN TERMINAL OPENS
 # echo neofetch >> ~/.bashrc
