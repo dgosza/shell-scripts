@@ -25,6 +25,11 @@ wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh
 # NVM
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
+# TeamViewer
+sudo sh -c "echo 'deb http://linux.teamviewer.com/deb stable main' >> /etc/apt/sources.list.d/teamviewer.list"
+sudo sh -c "echo 'deb http://linux.teamviewer.com/deb preview main' >> /etc/apt/sources.list.d/teamviewer.list"
+wget -q https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc -O- | sudo apt-key add -
+
 # DOCKER
 curl -fsSL https://get.docker.com | bash
 
@@ -51,6 +56,7 @@ gnome-tweak-tool \
 papirus-icon-theme \
 default-jre \
 default-jdk \
+teamviewer \
 terminator \
 build-essential \
 linux-headers-generic -y
