@@ -56,14 +56,15 @@ build-essential \
 linux-headers-generic -y
 
 sudo snap install \
-code --classic \
-ant --classic \
 discord \
 vlc \
 postman \
 dbeaver-ce \
 spotify \
 notion-snap
+
+sudo snap install code --classic
+sudo snap install ant --classic
 
 # -----------------------
 # | SOME CONFIGURATION  |
