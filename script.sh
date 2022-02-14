@@ -7,18 +7,17 @@
 # UTILS
 # https://extensions.gnome.org/
 
-# INSTALL MANUALLY
-# https://www.gnome-look.org/p/1267246
-# tar xf Nordic-darker-v40.tar.xz -C ~/.themes
-
-
 # -----------------------
 # | SOME CONFIGURATION  |
 # -----------------------
 sudo apt-get install curl -y
 mkdir ~/.themes
 mkdir ~/.icons
+
+# ICONS PAPIRUS
 wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh
+
+# NVM
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 # VSCODE
@@ -51,24 +50,44 @@ sudo apt-get -y update
 # -----------------------
 # |     INSTALL APPS    |
 # -----------------------
+# gnome-shell-extension-dash-to-panel -y \
+# gnome-tweaks \
 sudo apt-get install \
 neofetch \
 tree \
 gnome-tweak-tool \
-# gnome-shell-extension-dash-to-panel -y \
-# gnome-tweaks \
 papirus-icon-theme \
-default-jre -y \
-default-jdk -y \
+default-jre \
+default-jdk \
 code \
-spotify-client
+notion \
+terminator \
+build-essential \
+linux-headers-generic \
+spotify-client -y
 
-sudo apt-get install terminator
 
 
 # -----------------------
 # | SOME CONFIGURATION  |
 # -----------------------
+wget --user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0" https://www.vmware.com/go/getplayer-linux
+chmod +x getplayer-linux
+sudo ./getplayer-linux --required --eulas-agreed
+rm -f getplayer-linux
+
+# -----------------------
+# |   INSTALL MANUALLY  |
+# -----------------------
+
+# https://www.gnome-look.org/p/1267246
+# tar xf Nordic-darker-v40.tar.xz -C ~/.themes
+
+# Virtual Box
+# https://phoenixnap.com/kb/install-virtualbox-on-ubuntu
+
+# VMWare
+# https://pointcom.sampa.br/linux/como-instalar-o-vmware-workstation-player-no-ubuntu-20-04/
 
 # ADDING NEOFETCH WHEN TERMINAL OPENS
-echo neofetch >> ~/.bashrc
+# echo neofetch >> ~/.bashrc
