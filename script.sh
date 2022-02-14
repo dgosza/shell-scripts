@@ -17,6 +17,13 @@ mkdir ~/.icons
 # ICONS PAPIRUS
 wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh
 
+# POSTMAN
+wget https://dl.pstmn.io/download/latest/linux64 -O postman-linux-x64.tar.gz
+sudo tar -xzf postman-linux-x64.tar.gz -C /opt
+sudo ln -s /opt/Postman/Postman /usr/bin/postman
+rm -f postman-linux-x64.tar.gz
+sudo touch /usr/share/applications/Postman.desktop
+
 # NVM
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
@@ -45,8 +52,6 @@ sudo add-apt-repository universe
 # -----------------------
 sudo apt-get -y update
 
-
-
 # -----------------------
 # |     INSTALL APPS    |
 # -----------------------
@@ -60,7 +65,6 @@ papirus-icon-theme \
 default-jre \
 default-jdk \
 code \
-notion \
 terminator \
 build-essential \
 linux-headers-generic \
@@ -80,6 +84,7 @@ rm -f getplayer-linux
 # |   INSTALL MANUALLY  |
 # -----------------------
 
+# THEME NORDIC
 # https://www.gnome-look.org/p/1267246
 # tar xf Nordic-darker-v40.tar.xz -C ~/.themes
 
@@ -88,6 +93,18 @@ rm -f getplayer-linux
 
 # VMWare
 # https://pointcom.sampa.br/linux/como-instalar-o-vmware-workstation-player-no-ubuntu-20-04/
+
+# POSTMAN
+# https://nextgentips.com/2021/12/09/how-to-install-postman-client-on-ubuntu-21-10/
+# sudo su
+# gedit /usr/share/applications/Postman.desktop
+# [Desktop Entry]
+# Type=Application
+# Name=Postman
+# Icon=/opt/Postman/app/resources/app/assets/icon.png
+# Exec="/opt/Postman/Postman"
+# Comment=Postman GUI
+# Categories=Development;Code;
 
 # ADDING NEOFETCH WHEN TERMINAL OPENS
 # echo neofetch >> ~/.bashrc
