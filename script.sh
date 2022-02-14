@@ -7,6 +7,11 @@
 # UTILS
 # https://extensions.gnome.org/
 
+# INSTALL MANUALLY
+# https://www.gnome-look.org/p/1267246
+# tar xf Nordic-darker-v40.tar.xz -C ~/.themes
+
+
 # -----------------------
 # | SOME CONFIGURATION  |
 # -----------------------
@@ -15,7 +20,6 @@ mkdir ~/.themes
 mkdir ~/.icons
 wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-wget -c https://dl3.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTY0NDQ0MjczNCwidSI6bnVsbCwibHQiOiJkb3dubG9hZCIsInMiOiI4NGFjNTk0MTk5ODIxNTRlZmM5NDZmNzA5ZWJjOGEyZDRmZDcyNGQ3OThmMzg3OTkxNzc3NDdhNzhkYmVkZmZiYmMxZThlYjBkNDUxNDVhZGUxOWI1OTRmNmU3ZGM2MmVhNjY2YmQ5YTNmMGNlNTBhZTdiMzdiZDUwNWFkN2JmMCIsInQiOjE2NDQ3MTkwNzcsInN0ZnAiOiI2ZmU0MzcxNTM4MWMwODIxNjA5YzM0ZTk0OGEzMmI5YSIsInN0aXAiOiI0NS4xOTEuMTM0LjIxIn0.19JhXORc_W79xPphNB4z3v8O5mihx4h7WTBwoygS-gk/Nordic-darker-v40.tar.xz && tar xf Nordic-darker-v40.tar.xz -C ~/.themes
 
 # VSCODE
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
