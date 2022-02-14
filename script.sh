@@ -6,8 +6,7 @@
 
 # UTILS
 # https://extensions.gnome.org/
-
-# VMWare
+# https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/
 # https://pointcom.sampa.br/linux/como-instalar-o-vmware-workstation-player-no-ubuntu-20-04/
 
 # -----------------------
