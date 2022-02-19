@@ -45,6 +45,7 @@ linux-headers-generic -y
 
 sudo snap install \
 discord \
+1password \
 vlc \
 postman \
 dbeaver-ce \
