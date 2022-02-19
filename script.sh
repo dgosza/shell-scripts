@@ -10,6 +10,7 @@
 # https://pointcom.sampa.br/linux/como-instalar-o-vmware-workstation-player-no-ubuntu-20-04/
 # https://spaceship-prompt.sh/options/
 # https://extensions.gnome.org/
+# https://www.jetbrains.com/lp/mono/
 
 # -----------------------
 # | SOME CONFIGURATION  |
