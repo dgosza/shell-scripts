@@ -8,6 +8,7 @@
 # https://extensions.gnome.org/
 # https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/
 # https://pointcom.sampa.br/linux/como-instalar-o-vmware-workstation-player-no-ubuntu-20-04/
+# https://spaceship-prompt.sh/options/
 # https://extensions.gnome.org/
 
 # -----------------------
