@@ -99,17 +99,48 @@ rm -f getplayer-linux
 # ZSH_THEME="spaceship"
 
 # SPACESHIP_PROMPT_ORDER=(
-#   user          # Username section
-#   dir           # Current directory section
-#   host          # Hostname section
-#   git           # Git section (git_branch + git_status)
-#   hg            # Mercurial section (hg_branch  + hg_status)
-#   exec_time     # Execution time
-#   vi_mode       # Vi-mode indicator
-#   jobs          # Background jobs indicator
-#   exit_code     # Exit code section
-#   char          # Prompt character
+#  time          # Time stamps section
+#  user          # Username section
+#  dir           # Current directory section
+#  host          # Hostname section
+#  git           # Git section (git_branch + git_status)
+#  hg            # Mercurial section (hg_branch  + hg_status)
+#  package       # Package version
+#  gradle        # Gradle section
+#  maven         # Maven section
+#  node          # Node.js section
+#  ruby          # Ruby section
+#  elixir        # Elixir section
+#  xcode         # Xcode section
+#  swift         # Swift section
+#  golang        # Go section
+#  php           # PHP section
+#  rust          # Rust section
+#  haskell       # Haskell Stack section
+#  julia         # Julia section
+#  docker        # Docker section
+#  aws           # Amazon Web Services section
+#  gcloud        # Google Cloud Platform section
+#  venv          # virtualenv section
+#  conda         # conda virtualenv section
+#  pyenv         # Pyenv section
+#  dotnet        # .NET section
+#  ember         # Ember.js section
+#  kubectl       # Kubectl context section
+#  terraform     # Terraform workspace section
+#  ibmcloud      # IBM Cloud section
+#  exec_time     # Execution time
+#  battery       # Battery level and status
+#  vi_mode       # Vi-mode indicator
+#  jobs          # Background jobs indicator
+#  exit_code     # Exit code section
+#  char          # Prompt character
 # )
+
+
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm
 
 # ADDING NEOFETCH WHEN TERMINAL OPENS
 # echo neofetch >> ~/.bashrc
