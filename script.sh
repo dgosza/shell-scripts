@@ -7,10 +7,13 @@
 # UTILS
 # https://extensions.gnome.org/
 # https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/
-# https://pointcom.sampa.br/linux/como-instalar-o-vmware-workstation-player-no-ubuntu-20-04/
 # https://spaceship-prompt.sh/options/
 # https://extensions.gnome.org/
 # https://www.jetbrains.com/lp/mono/
+
+# https://www.youtube.com/watch?v=yMxAEzSbKdU
+# https://www.youtube.com/watch?v=jnjns83vgz0
+# https://virt-manager.org/
 
 # -----------------------
 # | SOME CONFIGURATION  |
@@ -45,12 +48,10 @@ default-jre \
 default-jdk \
 teamviewer \
 terminator \
-build-essential \
 linux-headers-generic -y
 
 sudo snap install \
 discord \
-1password \
 vlc \
 postman \
 dbeaver-ce \
@@ -73,12 +74,6 @@ wget -q https://download.teamviewer.com/download/linux/signature/TeamViewer2017.
 
 # DOCKER
 curl -fsSL https://get.docker.com | bash
-
-# VMWARE
-wget --user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0" https://www.vmware.com/go/getplayer-linux
-chmod +x getplayer-linux
-sudo ./getplayer-linux --required --eulas-agreed
-rm -f getplayer-linux
 
 # -----------------------
 # |  POST INSTALLATION  |
