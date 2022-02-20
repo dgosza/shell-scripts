@@ -41,6 +41,7 @@ sudo apt-get -y update
 sudo apt-get install \
 neofetch \
 tree \
+virt-manager \
 gnome-tweak-tool \
 google-chrome-stable \
 papirus-icon-theme \
