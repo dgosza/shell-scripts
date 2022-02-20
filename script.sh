@@ -84,6 +84,9 @@ curl -fsSL https://get.docker.com | bash
 # https://www.gnome-look.org/p/1267246
 # tar xf Nordic-darker-v40.tar.xz -C ~/.themes
 
+# FONT JETBRAINS
+# https://www.jetbrains.com/lp/mono/
+
 # ZSH BASH AND SPACESHIP THEME 
 # Install font https://github.com/tonsky/FiraCode/releases
 # Install FireCode Font in Terminator. 
