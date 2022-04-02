@@ -48,7 +48,6 @@ papirus-icon-theme \
 default-jre \
 default-jdk \
 teamviewer \
-terminator \
 linux-headers-generic -y
 
 sudo snap install \
@@ -60,7 +59,6 @@ spotify \
 notion-snap
 
 sudo snap install code --classic
-sudo snap install ant --classic
 
 # ICONS PAPIRUS
 wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh
